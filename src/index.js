@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './styles/style.css';
+import SearchForm from './components/SearchForm'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className="container">
+        <h1 className="title">React Movie Search</h1>
+        <SearchForm />
+      </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
